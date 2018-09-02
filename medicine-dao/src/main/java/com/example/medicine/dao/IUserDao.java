@@ -2,10 +2,12 @@ package com.example.medicine.dao;
 
 import com.example.medicine.model.po.User;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
 
 @Repository
 public interface IUserDao {
