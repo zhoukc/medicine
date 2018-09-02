@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <timestamp key="month" datePattern="yyyyMM"/>
+    <timestamp key="day" datePattern="yyyyMMdd"/>
+    <property name="APP_NAME" value="medicine"/>
+    <contextName>${APP_NAME}</contextName>
+    <jmxConfigurator/>
+
+    <appender name="all" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.home:-.}/${APP_NAME}/all/${month}/${day}.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${log.home:-.}/${APP_NAME}/all/${month}/${day}.log.%i.bak</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>50</MaxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>1024MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <ImmediateFlush>true</ImmediateFlush>
+            <charset>utf-8</charset>
+            <Pattern>%d [%t] %-5p %c{36} - %m%n</Pattern>
+        </encoder>
+    </appender>
+    <appender name="trace" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.home:-.}/${APP_NAME}/trace/${month}/${day}.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>trace</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${log.home:-.}/${APP_NAME}/trace/${month}/${day}.log.%i.bak</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>50</MaxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>1024MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <ImmediateFlush>true</ImmediateFlush>
+            <charset>utf-8</charset>
+            <Pattern>%d [%t] %-5p %c{36} - %m%n</Pattern>
+        </encoder>
+    </appender>
+    <appender name="debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.home:-.}/${APP_NAME}/debug/${month}/${day}.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>debug</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${log.home:-.}/${APP_NAME}/debug/${month}/${day}.log.%i.bak</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>50</MaxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>1024MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <ImmediateFlush>true</ImmediateFlush>
+            <charset>utf-8</charset>
+            <Pattern>%d [%t] %-5p %c{36} - %m%n</Pattern>
+        </encoder>
+    </appender>
+    <appender name="info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.home:-.}/${APP_NAME}/info/${month}/${day}.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>info</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${log.home:-.}/${APP_NAME}/info/${month}/${day}.log.%i.bak</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>50</MaxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>1024MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <ImmediateFlush>true</ImmediateFlush>
+            <charset>utf-8</charset>
+            <Pattern>%d [%t] %-5p %c{36} - %m%n</Pattern>
+        </encoder>
+    </appender>
+    <appender name="warn" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.home:-.}/${APP_NAME}/warn/${month}/${day}.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>warn</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${log.home:-.}/${APP_NAME}/warn/${month}/${day}.log.%i.bak</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>50</MaxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>1024MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <ImmediateFlush>true</ImmediateFlush>
+            <charset>utf-8</charset>
+            <Pattern>%d [%t] %-5p %c{36} - %m%n</Pattern>
+        </encoder>
+    </appender>
+    <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.home:-.}/${APP_NAME}/error/${month}/${day}.log</File>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>error</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${log.home:-.}/${APP_NAME}/error/${month}/${day}.log.%i.bak</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>50</MaxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>1024MB</MaxFileSize>
+        </triggeringPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <ImmediateFlush>true</ImmediateFlush>
+            <charset>utf-8</charset>
+            <Pattern>%d [%t] %-5p %c{36} - %m%n</Pattern>
+        </encoder>
+    </appender>
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <ImmediateFlush>true</ImmediateFlush>
+            <charset>utf-8</charset>
+            <Pattern>[%d{dd HH:mm:ss.SSS} %-5p] [%t] %c{2\} - %m%n</Pattern>
+        </encoder>
+    </appender>
+
+    <root>
+        <level value="info"/>
+        <appender-ref ref="console"/>
+        <appender-ref ref="trace"/>
+        <appender-ref ref="debug"/>
+        <appender-ref ref="info"/>
+        <appender-ref ref="warn"/>
+        <appender-ref ref="error"/>
+        <appender-ref ref="all"/>
+    </root>
+</configuration>
