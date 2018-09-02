@@ -1,6 +1,6 @@
 package com.example.medicine.rest;
 
-import com.example.medicine.iservice.IUserService;
+import com.example.medicine.ibiz.IUserService;
 import com.example.medicine.model.po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

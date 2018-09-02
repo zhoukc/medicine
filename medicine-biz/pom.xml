@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>medicine-model</artifactId>
+    <artifactId>medicine-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>medicine-model</name>
+    <name>medicine-service</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -21,6 +21,19 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>medicine-dao</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>medicine-ibiz</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

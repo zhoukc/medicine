@@ -20,7 +20,7 @@
 
     <modules>
         <module>medicine-dao</module>
-        <module>medicine-service</module>
+        <module>medicine-biz</module>
         <module>medicine-rest</module>
         <module>medicine-model</module>
         <module>medicine-web</module>

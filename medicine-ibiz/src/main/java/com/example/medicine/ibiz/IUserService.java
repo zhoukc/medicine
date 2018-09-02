@@ -1,8 +1,9 @@
-package com.example.medicine.iservice;
+package com.example.medicine.ibiz;
 
 import com.example.medicine.model.po.User;
 
 import java.util.List;
+
 
 public interface IUserService {
 
