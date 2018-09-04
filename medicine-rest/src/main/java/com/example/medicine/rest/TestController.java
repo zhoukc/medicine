@@ -2,18 +2,18 @@ package com.example.medicine.rest;
 
 import com.example.medicine.ibiz.IUserService;
 import com.example.medicine.model.po.User;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.example.medicine.model.ro.GetUsersOutput;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 
 @RestController
+@Slf4j
 public class TestController {
 
-    private static final Logger logger = LoggerFactory.getLogger(TestController.class);
+    // private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 
     @Autowired
     private IUserService userService;
@@ -43,8 +43,8 @@ public class TestController {
     }
 
     @RequestMapping("/users")
-    public List<User> getUsers() {
-        logger.info("访问getUsers");
+    public GetUsersOutput getUsers() {
+        log.info("访问getUsers");
         return userService.getUsers();
     }
 }
