@@ -18,7 +18,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @MapperScan(basePackages = "com.example.medicine.dao")
 public class DatasourceConfig {
 
-    @Bean(name = "dataSource", destroyMethod = "close")
+    @Bean(name = "dataSource")
     @ConfigurationProperties(prefix = "spring.datasource.hikari.primary")
     public DataSource dataSource() {
         return DataSourceBuilder.create().type(HikariDataSource.class).build();
