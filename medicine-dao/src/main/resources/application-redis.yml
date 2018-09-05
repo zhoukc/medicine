@@ -4,4 +4,9 @@ spring:
     timeout: 5000ms
     host: 127.0.0.1
     port: 6379
-
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+      shutdown-timeout: 100ms

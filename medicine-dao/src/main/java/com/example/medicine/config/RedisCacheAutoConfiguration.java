@@ -1,17 +1,23 @@
 package com.example.medicine.config;
 
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
-public class RedisConfig {
+@AutoConfigureAfter(RedisAutoConfiguration.class)
+public class RedisCacheAutoConfiguration {
 
 
-    @Bean("userRedisTemplate")
-    public RedisTemplate<String, Object> redisTemplate() {
+    @Bean
+    @ConditionalOnMissingBean
+    public RedisTemplate<String, Object> redisCacheTemplate(LettuceConnectionFactory redisConnectionFactory) {
 
         RedisTemplate<String, Object> template = new RedisTemplate<>();
         //指定value的序列化方式
@@ -21,9 +27,8 @@ public class RedisConfig {
         //指定key的序列化方式
         template.setKeySerializer(new StringRedisSerializer());
         template.setHashKeySerializer(new StringRedisSerializer());
-
+        template.setConnectionFactory(redisConnectionFactory);
         return template;
     }
-
 
 }

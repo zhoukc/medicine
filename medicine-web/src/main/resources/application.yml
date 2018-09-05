@@ -4,4 +4,5 @@ server:
 spring:
   profiles:
     active: dao
-
+  jackson:
+    default-property-inclusion: non_null
