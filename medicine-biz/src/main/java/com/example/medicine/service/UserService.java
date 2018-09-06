@@ -9,6 +9,7 @@ import com.example.medicine.model.po.User;
 import com.example.medicine.model.ro.GetUsersOutput;
 import com.example.medicine.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -33,7 +34,9 @@ public class UserService implements IUserService {
 
 
     @Override
+    @Cacheable(value = "users", keyGenerator = "keyGenerator")
     public GetUsersOutput getUsers() {
+        System.out.println("没使用缓存");
         List<User> users = userRepository.getUsers();
         List<GetUsersOutput.User> collect = users.stream().map(p -> MapperUtil.mapper(p, GetUsersOutput.User.class)).collect(Collectors.toList());
         return ResultExtensions.ToSucceededResult(collect, GetUsersOutput.class);

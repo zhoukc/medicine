@@ -10,3 +10,7 @@ spring:
         max-wait: -1ms
         max-idle: 8
       shutdown-timeout: 100ms
+  cache:
+    type: redis
+    redis:
+      time-to-live: 60000ms

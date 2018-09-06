@@ -4,9 +4,10 @@ import com.example.medicine.model.expands.IContent;
 import com.example.medicine.model.expands.IResult;
 
 
+import java.io.Serializable;
 import java.util.List;
 
-public class GetUsersOutput implements IResult, IContent<List<GetUsersOutput.User>> {
+public class GetUsersOutput implements IResult, IContent<List<GetUsersOutput.User>>, Serializable {
 
     private int resultStates;
     private List<User> content;
@@ -32,7 +33,7 @@ public class GetUsersOutput implements IResult, IContent<List<GetUsersOutput.Use
     }
 
 
-    public static class User {
+    public static class User implements Serializable {
         private String name;
         private Integer age;
         private String sex;
