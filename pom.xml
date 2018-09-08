@@ -25,6 +25,7 @@
         <module>medicine-model</module>
         <module>medicine-web</module>
         <module>medicine-ibiz</module>
+        <module>medicine-features</module>
     </modules>
 
 

@@ -2,7 +2,11 @@ package com.example.medicine.model.expands;
 
 public interface IFailureReason {
 
-    void setFailureReason(Integer paramInteger);
+    void setCode(int code);
 
-    Integer getFailureReason();
+    int getCode();
+
+    void setMessage(String message);
+
+    String getMessage();
 }

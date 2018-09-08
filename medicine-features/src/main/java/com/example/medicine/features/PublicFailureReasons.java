@@ -1,17 +1,19 @@
-package com.example.medicine.expands;
+package com.example.medicine.features;
 
-public enum ResultStates {
-    SUCCEEDED(0), FAILED(1);
+public enum PublicFailureReasons {
+
+    PARAMETER_ERROR(4000, "参数错误");
 
     private int index;
     private String message;
 
-    ResultStates(int index) {
+    PublicFailureReasons(int index, String message) {
         this.index = index;
+        this.message = message;
     }
 
     public int getIndex() {
-        return this.index;
+        return index;
     }
 
     public void setIndex(int index) {
@@ -19,7 +21,7 @@ public enum ResultStates {
     }
 
     public String getMessage() {
-        return this.message;
+        return message;
     }
 
     public void setMessage(String message) {

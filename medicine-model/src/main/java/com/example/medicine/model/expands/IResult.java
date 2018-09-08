@@ -2,7 +2,7 @@ package com.example.medicine.model.expands;
 
 public  interface IResult
 {
-   void setResultStates(int paramInt);
+   void setResultStates(int resultStates);
 
    int getResultStates();
 }

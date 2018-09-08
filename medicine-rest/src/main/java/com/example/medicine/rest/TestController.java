@@ -1,13 +1,19 @@
 package com.example.medicine.rest;
 
+import com.example.medicine.exception.BusinessException;
 import com.example.medicine.ibiz.IUserService;
 import com.example.medicine.model.po.User;
+import com.example.medicine.model.ro.AddUserInput;
+import com.example.medicine.model.ro.AddUserOutput;
 import com.example.medicine.model.ro.GetUsersOutput;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,14 +41,22 @@ public class TestController {
     }
 
 
+    @PostMapping(value = "addUser", produces = "application/json")
+    public AddUserOutput addUser(@Validated @RequestBody AddUserInput input) {
+        return userService.addUser(input);
+    }
+
+
     @RequestMapping("/add")
     public String add() {
         User user = new User();
         user.setAge(20);
         user.setName("jack");
         user.setSex("M");
-        int result = userService.addUser(user);
-
+        int result = 0;
+        if (result == 0) {
+            throw new BusinessException(1, "id不存在");
+        }
         User user2 = new User();
         user2.setAge(20);
         user2.setName("mary");

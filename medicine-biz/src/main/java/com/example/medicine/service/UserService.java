@@ -6,6 +6,8 @@ import com.example.medicine.expands.ResultExtensions;
 import com.example.medicine.ibiz.IUserService;
 import com.example.medicine.model.expands.MapperUtil;
 import com.example.medicine.model.po.User;
+import com.example.medicine.model.ro.AddUserInput;
+import com.example.medicine.model.ro.AddUserOutput;
 import com.example.medicine.model.ro.GetUsersOutput;
 import com.example.medicine.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +24,10 @@ public class UserService implements IUserService {
     private UserRepository userRepository;
 
     @Override
-    public int addUser(User user) {
-        return userRepository.addUser(user);
+    public AddUserOutput addUser(AddUserInput input) {
+        User user = MapperUtil.mapper(input, User.class);
+        int i = userRepository.addUser(user);
+        return ResultExtensions.ToFailedResult(AddUserOutput.FailureReasons.REASONS, AddUserOutput.class);
     }
 
     @ChooseDataSource(DataSources.MEDICINE2)

@@ -1,0 +1,169 @@
+2018-09-06 21:13:22,393 [main] INFO  c.e.medicine.service.UserServiceTest - Starting UserServiceTest on hasee with PID 17248 (started by hasee in E:\win10-PC\idea workspace\medicine-parent\medicine-biz)
+2018-09-06 21:13:22,395 [main] INFO  c.e.medicine.service.UserServiceTest - The following profiles are active: dao
+2018-09-06 21:13:22,449 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:13:22 CST 2018]; root of context hierarchy
+2018-09-06 21:13:23,615 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-06 21:13:24,163 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheAutoConfiguration' of type [com.example.medicine.config.RedisCacheAutoConfiguration$$EnhancerBySpringCGLIB$$b3354f6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:13:24,360 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.example.medicine.config.RedisCacheAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:13:25,713 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:13:26,199 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:13:22 CST 2018]; root of context hierarchy
+2018-09-06 21:13:26,298 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add]}" onto public java.lang.String com.example.medicine.rest.TestController.add()
+2018-09-06 21:13:26,300 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users]}" onto public com.example.medicine.model.ro.GetUsersOutput com.example.medicine.rest.TestController.getUsers()
+2018-09-06 21:13:26,300 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.example.medicine.rest.TestController.hello()
+2018-09-06 21:13:26,302 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 21:13:26,303 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 21:13:26,339 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:13:26,339 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:13:26,398 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-09-06 21:13:27,110 [main] INFO  c.e.medicine.service.UserServiceTest - Started UserServiceTest in 5.725 seconds (JVM running for 9.731)
+2018-09-06 21:13:27,433 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-09-06 21:13:27,435 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-09-06 21:13:28,300 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-06 21:13:28,626 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-06 21:13:28,877 [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:13:22 CST 2018]; root of context hierarchy
+2018-09-06 21:13:30,003 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-06 21:13:30,012 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-06 21:14:27,654 [main] INFO  c.e.medicine.service.UserServiceTest - Starting UserServiceTest on hasee with PID 15228 (started by hasee in E:\win10-PC\idea workspace\medicine-parent\medicine-biz)
+2018-09-06 21:14:27,657 [main] INFO  c.e.medicine.service.UserServiceTest - The following profiles are active: dao
+2018-09-06 21:14:27,714 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:14:27 CST 2018]; root of context hierarchy
+2018-09-06 21:14:28,889 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-06 21:14:29,420 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheAutoConfiguration' of type [com.example.medicine.config.RedisCacheAutoConfiguration$$EnhancerBySpringCGLIB$$79f342b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:14:29,595 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.example.medicine.config.RedisCacheAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:14:30,824 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:14:31,290 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:14:27 CST 2018]; root of context hierarchy
+2018-09-06 21:14:31,388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add]}" onto public java.lang.String com.example.medicine.rest.TestController.add()
+2018-09-06 21:14:31,390 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users]}" onto public com.example.medicine.model.ro.GetUsersOutput com.example.medicine.rest.TestController.getUsers()
+2018-09-06 21:14:31,391 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.example.medicine.rest.TestController.hello()
+2018-09-06 21:14:31,393 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 21:14:31,394 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 21:14:31,434 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:14:31,435 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:14:31,547 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-09-06 21:14:32,382 [main] INFO  c.e.medicine.service.UserServiceTest - Started UserServiceTest in 6.077 seconds (JVM running for 7.467)
+2018-09-06 21:14:32,626 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-09-06 21:14:32,627 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-09-06 21:14:33,447 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-06 21:14:33,735 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-06 21:14:33,907 [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:14:27 CST 2018]; root of context hierarchy
+2018-09-06 21:14:35,029 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-06 21:14:35,040 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-06 21:15:41,652 [main] INFO  c.e.medicine.service.UserServiceTest - Starting UserServiceTest on hasee with PID 13384 (started by hasee in E:\win10-PC\idea workspace\medicine-parent\medicine-biz)
+2018-09-06 21:15:41,654 [main] INFO  c.e.medicine.service.UserServiceTest - The following profiles are active: dao
+2018-09-06 21:15:41,747 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:15:41 CST 2018]; root of context hierarchy
+2018-09-06 21:15:42,946 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-06 21:15:43,486 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheAutoConfiguration' of type [com.example.medicine.config.RedisCacheAutoConfiguration$$EnhancerBySpringCGLIB$$5ac9a7e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:15:43,671 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.example.medicine.config.RedisCacheAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:15:45,112 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:15:45,658 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:15:41 CST 2018]; root of context hierarchy
+2018-09-06 21:15:45,771 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add]}" onto public java.lang.String com.example.medicine.rest.TestController.add()
+2018-09-06 21:15:45,772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users]}" onto public com.example.medicine.model.ro.GetUsersOutput com.example.medicine.rest.TestController.getUsers()
+2018-09-06 21:15:45,773 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.example.medicine.rest.TestController.hello()
+2018-09-06 21:15:45,776 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 21:15:45,777 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 21:15:45,827 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:15:45,828 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:15:45,914 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-09-06 21:15:46,698 [main] INFO  c.e.medicine.service.UserServiceTest - Started UserServiceTest in 6.298 seconds (JVM running for 7.716)
+2018-09-06 21:15:46,984 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-09-06 21:15:46,986 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-09-06 21:15:47,813 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-06 21:15:48,082 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-06 21:15:48,280 [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:15:41 CST 2018]; root of context hierarchy
+2018-09-06 21:15:49,435 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-06 21:15:49,447 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-06 21:16:34,946 [main] INFO  c.e.medicine.service.UserServiceTest - Starting UserServiceTest on hasee with PID 5912 (started by hasee in E:\win10-PC\idea workspace\medicine-parent\medicine-biz)
+2018-09-06 21:16:34,947 [main] INFO  c.e.medicine.service.UserServiceTest - The following profiles are active: dao
+2018-09-06 21:16:35,033 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:16:35 CST 2018]; root of context hierarchy
+2018-09-06 21:16:36,401 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-06 21:16:36,906 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheAutoConfiguration' of type [com.example.medicine.config.RedisCacheAutoConfiguration$$EnhancerBySpringCGLIB$$cefee6b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:16:37,077 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.example.medicine.config.RedisCacheAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:16:38,322 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:16:38,747 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:16:35 CST 2018]; root of context hierarchy
+2018-09-06 21:16:38,845 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add]}" onto public java.lang.String com.example.medicine.rest.TestController.add()
+2018-09-06 21:16:38,847 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users]}" onto public com.example.medicine.model.ro.GetUsersOutput com.example.medicine.rest.TestController.getUsers()
+2018-09-06 21:16:38,847 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.example.medicine.rest.TestController.hello()
+2018-09-06 21:16:38,849 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 21:16:38,851 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 21:16:38,893 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:16:38,893 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:16:38,970 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-09-06 21:16:39,671 [main] INFO  c.e.medicine.service.UserServiceTest - Started UserServiceTest in 5.827 seconds (JVM running for 7.183)
+2018-09-06 21:16:39,907 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-09-06 21:16:39,911 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-09-06 21:16:40,766 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-06 21:16:41,004 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-06 21:16:41,187 [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:16:35 CST 2018]; root of context hierarchy
+2018-09-06 21:16:42,313 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-06 21:16:42,321 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-06 21:17:12,091 [main] INFO  c.e.medicine.service.UserServiceTest - Starting UserServiceTest on hasee with PID 17044 (started by hasee in E:\win10-PC\idea workspace\medicine-parent\medicine-biz)
+2018-09-06 21:17:12,095 [main] INFO  c.e.medicine.service.UserServiceTest - The following profiles are active: dao
+2018-09-06 21:17:12,247 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:17:12 CST 2018]; root of context hierarchy
+2018-09-06 21:17:13,595 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-06 21:17:14,103 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheAutoConfiguration' of type [com.example.medicine.config.RedisCacheAutoConfiguration$$EnhancerBySpringCGLIB$$dcd6f6fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:17:14,281 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.example.medicine.config.RedisCacheAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:17:15,515 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:17:15,927 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:17:12 CST 2018]; root of context hierarchy
+2018-09-06 21:17:16,012 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add]}" onto public java.lang.String com.example.medicine.rest.TestController.add()
+2018-09-06 21:17:16,014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users]}" onto public com.example.medicine.model.ro.GetUsersOutput com.example.medicine.rest.TestController.getUsers()
+2018-09-06 21:17:16,014 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.example.medicine.rest.TestController.hello()
+2018-09-06 21:17:16,018 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 21:17:16,019 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 21:17:16,054 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:17:16,055 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:17:16,119 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-09-06 21:17:16,835 [main] INFO  c.e.medicine.service.UserServiceTest - Started UserServiceTest in 6.018 seconds (JVM running for 7.385)
+2018-09-06 21:17:17,087 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-09-06 21:17:17,090 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-09-06 21:17:18,099 [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:17:12 CST 2018]; root of context hierarchy
+2018-09-06 21:25:37,225 [main] INFO  c.e.medicine.service.UserServiceTest - Starting UserServiceTest on hasee with PID 8960 (started by hasee in E:\win10-PC\idea workspace\medicine-parent\medicine-biz)
+2018-09-06 21:25:37,226 [main] INFO  c.e.medicine.service.UserServiceTest - The following profiles are active: dao
+2018-09-06 21:25:37,323 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:25:37 CST 2018]; root of context hierarchy
+2018-09-06 21:25:38,415 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-06 21:25:38,936 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheAutoConfiguration' of type [com.example.medicine.config.RedisCacheAutoConfiguration$$EnhancerBySpringCGLIB$$79f342b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:25:39,113 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.example.medicine.config.RedisCacheAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:25:39,592 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-06 21:30:27,795 [main] INFO  c.e.medicine.service.UserServiceTest - Starting UserServiceTest on hasee with PID 17208 (started by hasee in E:\win10-PC\idea workspace\medicine-parent\medicine-biz)
+2018-09-06 21:30:27,796 [main] INFO  c.e.medicine.service.UserServiceTest - The following profiles are active: dao
+2018-09-06 21:30:27,862 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7f8a9499: startup date [Thu Sep 06 21:30:27 CST 2018]; root of context hierarchy
+2018-09-06 21:30:29,205 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-06 21:30:29,769 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheAutoConfiguration' of type [com.example.medicine.config.RedisCacheAutoConfiguration$$EnhancerBySpringCGLIB$$d3a4eb43] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:30:29,943 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.example.medicine.config.RedisCacheAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:30:31,567 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:30:32,186 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7f8a9499: startup date [Thu Sep 06 21:30:27 CST 2018]; root of context hierarchy
+2018-09-06 21:30:32,290 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add]}" onto public java.lang.String com.example.medicine.rest.TestController.add()
+2018-09-06 21:30:32,292 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users]}" onto public com.example.medicine.model.ro.GetUsersOutput com.example.medicine.rest.TestController.getUsers()
+2018-09-06 21:30:32,293 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.example.medicine.rest.TestController.hello()
+2018-09-06 21:30:32,297 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 21:30:32,303 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 21:30:32,342 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:30:32,342 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:30:32,401 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-09-06 21:30:33,118 [main] INFO  c.e.medicine.service.UserServiceTest - Started UserServiceTest in 6.408 seconds (JVM running for 7.734)
+2018-09-06 21:30:33,367 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-09-06 21:30:33,369 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-09-06 21:30:34,180 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-06 21:30:34,443 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-06 21:30:34,725 [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@7f8a9499: startup date [Thu Sep 06 21:30:27 CST 2018]; root of context hierarchy
+2018-09-06 21:30:35,849 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-06 21:30:35,857 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-06 21:30:47,999 [main] INFO  c.e.medicine.service.UserServiceTest - Starting UserServiceTest on hasee with PID 17316 (started by hasee in E:\win10-PC\idea workspace\medicine-parent\medicine-biz)
+2018-09-06 21:30:48,000 [main] INFO  c.e.medicine.service.UserServiceTest - The following profiles are active: dao
+2018-09-06 21:30:48,058 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:30:48 CST 2018]; root of context hierarchy
+2018-09-06 21:30:49,387 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-06 21:30:49,904 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisCacheAutoConfiguration' of type [com.example.medicine.config.RedisCacheAutoConfiguration$$EnhancerBySpringCGLIB$$8ef0c4af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:30:50,073 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.example.medicine.config.RedisCacheAutoConfiguration$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-06 21:30:51,322 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:30:51,714 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:30:48 CST 2018]; root of context hierarchy
+2018-09-06 21:30:51,820 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add]}" onto public java.lang.String com.example.medicine.rest.TestController.add()
+2018-09-06 21:30:51,822 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users]}" onto public com.example.medicine.model.ro.GetUsersOutput com.example.medicine.rest.TestController.getUsers()
+2018-09-06 21:30:51,822 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.example.medicine.rest.TestController.hello()
+2018-09-06 21:30:51,828 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-06 21:30:51,829 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-06 21:30:51,869 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:30:51,870 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-06 21:30:51,939 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-09-06 21:30:52,634 [main] INFO  c.e.medicine.service.UserServiceTest - Started UserServiceTest in 5.718 seconds (JVM running for 7.045)
+2018-09-06 21:30:52,881 [main] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2018-09-06 21:30:52,892 [main] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2018-09-06 21:30:53,823 [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@59e2d8e3: startup date [Thu Sep 06 21:30:48 CST 2018]; root of context hierarchy
