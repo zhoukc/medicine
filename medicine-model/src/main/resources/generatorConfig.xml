@@ -46,9 +46,9 @@
             <!-- 是否对类CHAR类型的列的数据进行trim操作 -->
             <property name="trimStrings" value="false"/>
             <!-- 建立的Model对象是否 不可改变  即生成的Model对象不会有 setter方法，只有构造方法 -->
-            <property name="immutable" value="true"/>
+            <property name="immutable" value="false"/>
 
-           <!-- <property name="delimitIdentifiers" value=""/>-->
+            <!-- <property name="delimitIdentifiers" value=""/>-->
         </javaModelGenerator>
 
         <!--  tableName:表名; domainObjectName:对应的DO -->
