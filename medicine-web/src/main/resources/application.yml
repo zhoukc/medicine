@@ -6,3 +6,10 @@ spring:
     active: dao
   jackson:
     default-property-inclusion: non_null
+#打开sql开关
+logging:
+  level:
+    com:
+      example:
+        medicine:
+          dao: debug

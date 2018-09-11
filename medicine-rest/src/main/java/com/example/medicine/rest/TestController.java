@@ -8,27 +8,22 @@ import com.example.medicine.model.ro.AddUserOutput;
 import com.example.medicine.model.ro.GetUsersOutput;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.concurrent.TimeUnit;
-
 
 @RestController
 @Slf4j
 public class TestController {
 
-    @Autowired
-    @Qualifier(value = "redisCacheTemplate")
-    private RedisTemplate redisTemplate;
-    @Autowired
-    private StringRedisTemplate stringRedisTemplate;
+//    @Autowired
+//    @Qualifier(value = "redisCacheTemplate")
+//    private RedisTemplate redisTemplate;
+//    @Autowired
+//    private StringRedisTemplate stringRedisTemplate;
 
     // private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 
@@ -70,10 +65,10 @@ public class TestController {
     @RequestMapping("/users")
     public GetUsersOutput getUsers() {
         log.info("访问getUsers");
-        redisTemplate.opsForValue().set("key2", "com.example.medicine.rest.TestController");
-        stringRedisTemplate.opsForValue().set("string2", "org.springframework.boot.web.embedded.tomcat.TomcatWebServer");
-
-        stringRedisTemplate.opsForValue().set("u2", "com.zaxxer.hikari.HikariDataSource", 60, TimeUnit.SECONDS);
+//        redisTemplate.opsForValue().set("key2", "com.example.medicine.rest.TestController");
+//        stringRedisTemplate.opsForValue().set("string2", "org.springframework.boot.web.embedded.tomcat.TomcatWebServer");
+//
+//        stringRedisTemplate.opsForValue().set("u2", "com.zaxxer.hikari.HikariDataSource", 60, TimeUnit.SECONDS);
         return userService.getUsers();
     }
 }

@@ -17,13 +17,13 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.lang.reflect.Method;
 
-@Configuration
-@AutoConfigureAfter(RedisAutoConfiguration.class)
-@EnableCaching //缓存开启总开关
+//@Configuration
+//@AutoConfigureAfter(RedisAutoConfiguration.class)
+//@EnableCaching //缓存开启总开关
 public class RedisCacheAutoConfiguration extends CachingConfigurerSupport {
 
-    @Bean
-    @ConditionalOnMissingBean
+//    @Bean
+//    @ConditionalOnMissingBean
     public RedisTemplate<String, Object> redisCacheTemplate(LettuceConnectionFactory redisConnectionFactory) {
 
         RedisTemplate<String, Object> template = new RedisTemplate<>();
@@ -41,7 +41,7 @@ public class RedisCacheAutoConfiguration extends CachingConfigurerSupport {
     /**
      * @Description 自定义key的生成策略
      */
-    @Bean
+//    @Bean
     public KeyGenerator keyGenerator() {
 
         return new KeyGenerator() {
@@ -61,7 +61,7 @@ public class RedisCacheAutoConfiguration extends CachingConfigurerSupport {
     /**
      * @Description 缓存管理器
      */
-    @Bean
+//    @Bean
     public CacheManager cacheManager(LettuceConnectionFactory redisConnectionFactory) {
         RedisCacheManager.RedisCacheManagerBuilder builder = RedisCacheManager
                 .RedisCacheManagerBuilder

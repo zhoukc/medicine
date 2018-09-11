@@ -38,7 +38,7 @@ public class UserService implements IUserService {
 
 
     @Override
-    @Cacheable(value = "users", keyGenerator = "keyGenerator")
+    //@Cacheable(value = "users", keyGenerator = "keyGenerator")
     public GetUsersOutput getUsers() {
         System.out.println("没使用缓存");
         List<User> users = userRepository.getUsers();
