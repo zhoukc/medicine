@@ -1,8 +1,6 @@
 package com.example.medicine.model.expands;
 
 import com.baidu.unbiz.easymapper.MapperFactory;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 
 /**
  * @author zhoukc

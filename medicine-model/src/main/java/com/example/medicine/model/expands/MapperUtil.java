@@ -1,30 +1,16 @@
 package com.example.medicine.model.expands;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 
 public class MapperUtil {
     private static final IMapper mapperAgent = new Mapper();
     private static final Set<String> mapCaches = new HashSet();
 
-//  public MapperUtil(IMapper mapperAgent)
-//  {
-//    mapperAgent = mapperAgent;
-//  }
 
     public static <O, T> T mapper(O obj, Class<T> val) {
         String key = obj.getClass().getName() + "_" + val.getName();
@@ -36,10 +22,6 @@ public class MapperUtil {
         return mapperAgent.map(obj, val);
     }
 
-//  public static <O, T> T mapper(O obj, Class<T> val) {
-//    T valObject = mapper(obj, val);
-//    return valObject;
-//  }
 
     public static <O, T> T mapperObject(O var1, T var2) {
         String key = var1.getClass().getName() + "_" + var2.getClass().getName();
@@ -51,10 +33,6 @@ public class MapperUtil {
         return mapperAgent.map(var1, var2);
     }
 
-//  public static <O, T> T mapperObject(O var1, T var2) {
-//    T valObject = mapperObject(var1, var2);
-//    return valObject;
-//  }
 
     public static Type[] getParameterizedTypes(Object object) {
         Type superclassType = object.getClass().getGenericSuperclass();

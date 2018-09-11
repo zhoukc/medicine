@@ -71,7 +71,7 @@ public class ResultExtensions {
                 message = String.valueOf(field2.get(obj));
 
             } catch (NoSuchFieldException e) {
-                log.error("必须enum有index和message");
+                 log.error("必须enum有index和message");
             } catch (Exception e) {
                 log.error("方法拒绝访问");
             }
