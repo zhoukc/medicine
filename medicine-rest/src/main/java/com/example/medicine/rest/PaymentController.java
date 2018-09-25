@@ -48,7 +48,8 @@ public class PaymentController {
         paymentInfo.setUrl_return(PartnerConfig.URL_RETURN);
         paymentInfo.setUserreq_ip(LLPayUtil.getIpAddr(request));
         paymentInfo.setUrl_order("");
-        paymentInfo.setValid_order("10080");// 单位分钟，可以为空，默认7天
+        // 单位分钟，可以为空，默认7天
+        paymentInfo.setValid_order("10080");
         paymentInfo.setTimestamp(LLPayUtil.getCurrentDateTimeStr());
         paymentInfo.setRisk_item(createRiskItem());
         // 加签名
@@ -56,12 +57,10 @@ public class PaymentController {
                         .toJSONString(paymentInfo)), PartnerConfig.TRADER_PRI_KEY,
                 PartnerConfig.MD5_KEY);
         paymentInfo.setSign(sign);
-        if (!LLPayUtil.isnull(request.getParameter("no_agree")))
-        {
+        if (!LLPayUtil.isnull(request.getParameter("no_agree"))) {
             paymentInfo.setNo_agree(request.getParameter("no_agree"));
             paymentInfo.setBack_url("http://www.lianlianpay.com/");
-        } else
-        {
+        } else {
             // 从系统中获取用户身份信息
             paymentInfo.setId_type("0");
             paymentInfo.setId_no("410782198912151334");
@@ -72,7 +71,7 @@ public class PaymentController {
         }
 
         HttpRequestSimple instance = HttpRequestSimple.getInstance();
-        instance.postSendHttp(ServerURLConfig.PAY_URL,paymentInfo);
+        instance.postSendHttp(ServerURLConfig.PAY_URL, paymentInfo);
     }
 
     /**
@@ -145,6 +144,7 @@ public class PaymentController {
             //金额
             String total_amount = payDataBean.getMoney_order();
 
+            log.info("进行订单后续处理");
 
             retBean.setRet_code("0000");
             retBean.setRet_msg("交易成功");

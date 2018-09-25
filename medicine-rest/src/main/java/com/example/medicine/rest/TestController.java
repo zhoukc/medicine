@@ -19,13 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class TestController {
 
-//    @Autowired
-//    @Qualifier(value = "redisCacheTemplate")
-//    private RedisTemplate redisTemplate;
-//    @Autowired
-//    private StringRedisTemplate stringRedisTemplate;
-
-    // private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 
     @Autowired
     private IUserService userService;
@@ -64,11 +57,6 @@ public class TestController {
 
     @RequestMapping("/users")
     public GetUsersOutput getUsers() {
-        log.info("访问getUsers");
-//        redisTemplate.opsForValue().set("key2", "com.example.medicine.rest.TestController");
-//        stringRedisTemplate.opsForValue().set("string2", "org.springframework.boot.web.embedded.tomcat.TomcatWebServer");
-//
-//        stringRedisTemplate.opsForValue().set("u2", "com.zaxxer.hikari.HikariDataSource", 60, TimeUnit.SECONDS);
         return userService.getUsers();
     }
 }
