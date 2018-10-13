@@ -6,36 +6,38 @@ import com.example.medicine.model.po.User;
 import com.example.medicine.model.ro.AddUserInput;
 import com.example.medicine.model.ro.AddUserOutput;
 import com.example.medicine.model.ro.GetUsersOutput;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
 @Slf4j
+@Api(value = "测试Controller")
 public class TestController {
 
 
     @Autowired
     private IUserService userService;
 
-    @RequestMapping("/hello")
+    @ApiOperation(value = "hello方法", notes = "测试方法")
+    @GetMapping(value = "/hello")
     public String hello() {
         return "hello springboot multi-module";
     }
 
-
-    @PostMapping(value = "addUser", produces = "application/json")
+    @ApiOperation(value = "添加用户", notes = "添加用户")
+    @PostMapping(value = "addUser", produces = "application/json", headers = {"token"})
     public AddUserOutput addUser(@Validated @RequestBody AddUserInput input) {
         return userService.addUser(input);
     }
 
 
-    @RequestMapping("/add")
+    @ApiOperation(value = "添加用户")
+    @GetMapping("/add")
     public String add() {
         User user = new User();
         user.setAge(20);
@@ -55,7 +57,8 @@ public class TestController {
         return "data add success! result=" + result;
     }
 
-    @RequestMapping("/users")
+    @ApiOperation(value = "获取用户列表")
+    @GetMapping("/users")
     public GetUsersOutput getUsers() {
         return userService.getUsers();
     }

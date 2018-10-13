@@ -2,6 +2,7 @@ package com.example.medicine.model.ro;
 
 import com.example.medicine.model.expands.IContent;
 import com.example.medicine.model.expands.IResult;
+import io.swagger.annotations.ApiModelProperty;
 
 
 import java.io.Serializable;
@@ -34,7 +35,10 @@ public class GetUsersOutput implements IResult, IContent<List<GetUsersOutput.Use
 
 
     public static class User implements Serializable {
+
+        @ApiModelProperty("用户名")
         private String name;
+        @ApiModelProperty("年龄")
         private Integer age;
         private String sex;
         private String from;
