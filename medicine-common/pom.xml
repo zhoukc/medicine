@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>medicine-service</artifactId>
+    <artifactId>medicine-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>medicine-service</name>
-    <description>Demo project for Spring Boot</description>
+    <name>medicine-common</name>
+    <description>medicine-common project for Spring Boot</description>
 
     <parent>
         <groupId>com.example</groupId>
@@ -23,27 +23,28 @@
     </properties>
 
     <dependencies>
+
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>medicine-dao</artifactId>
-            <version>${project.version}</version>
+            <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>3.3.1</version>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>medicine-ibiz</artifactId>
-            <version>${project.version}</version>
+            <groupId>asm</groupId>
+            <artifactId>asm-commons</artifactId>
+            <version>3.3.1</version>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>medicine-web</artifactId>
-            <version>${project.version}</version>
-            <scope>test</scope>
+            <groupId>asm</groupId>
+            <artifactId>asm-util</artifactId>
+            <version>3.3.1</version>
         </dependency>
         <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>medicine-common</artifactId>
-            <version>${project.version}</version>
+            <groupId>cglib</groupId>
+            <artifactId>cglib-nodep</artifactId>
+            <version>2.2.2</version>
         </dependency>
+
     </dependencies>
 
 

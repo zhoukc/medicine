@@ -41,15 +41,47 @@ public class GetUsersOutput implements IResult, IContent<List<GetUsersOutput.Use
         @ApiModelProperty("年龄")
         private Integer age;
         private String sex;
-        private String from;
+        private List<Test> list;
 
-        public String getFrom() {
-            return from;
+        public List<Test> getList() {
+            return list;
         }
 
-        public void setFrom(String from) {
-            this.from = from;
+        public void setList(List<Test> list) {
+            this.list = list;
         }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public Integer getAge() {
+            return age;
+        }
+
+        public void setAge(Integer age) {
+            this.age = age;
+        }
+
+        public String getSex() {
+            return sex;
+        }
+
+        public void setSex(String sex) {
+            this.sex = sex;
+        }
+    }
+
+    public static class Test {
+        @ApiModelProperty("用户名")
+        private String name;
+        @ApiModelProperty("年龄")
+        private Integer age;
+        private String sex;
 
         public String getName() {
             return name;

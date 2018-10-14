@@ -1,5 +1,6 @@
 package com.example.medicine.service;
 
+import com.example.medicine.common.mapper.CGlibMapper;
 import com.example.medicine.config.ChooseDataSource;
 import com.example.medicine.config.DataSources;
 import com.example.medicine.expands.ResultExtensions;
@@ -14,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -38,11 +40,10 @@ public class UserService implements IUserService {
 
 
     @Override
-    //@Cacheable(value = "users", keyGenerator = "keyGenerator")
     public GetUsersOutput getUsers() {
-        System.out.println("没使用缓存");
         List<User> users = userRepository.getUsers();
         List<GetUsersOutput.User> collect = users.stream().map(p -> MapperUtil.mapper(p, GetUsersOutput.User.class)).collect(Collectors.toList());
+
         return ResultExtensions.ToSucceededResult(collect, GetUsersOutput.class);
     }
 }

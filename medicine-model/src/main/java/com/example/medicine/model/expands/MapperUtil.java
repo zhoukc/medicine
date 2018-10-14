@@ -1,6 +1,9 @@
 package com.example.medicine.model.expands;
 
 
+import com.example.medicine.common.utils.ArrayUtil;
+import com.example.medicine.common.utils.ClassUtil;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -14,22 +17,22 @@ public class MapperUtil {
 
     public static <O, T> T mapper(O obj, Class<T> val) {
         String key = obj.getClass().getName() + "_" + val.getName();
-        if (mapCaches.contains(key))
-            return mapperAgent.map(obj, val);
+//        if (mapCaches.contains(key))
+//            return mapperAgent.map(obj, val);
 
         mapperRegister(obj.getClass(), val);
-        mapCaches.add(key);
+        //mapCaches.add(key);
         return mapperAgent.map(obj, val);
     }
 
 
     public static <O, T> T mapperObject(O var1, T var2) {
         String key = var1.getClass().getName() + "_" + var2.getClass().getName();
-        if (mapCaches.contains(key))
-            return mapperAgent.map(var1, var2);
+//        if (mapCaches.contains(key))
+//            return mapperAgent.map(var1, var2);
 
         mapperRegister(var1.getClass(), var2.getClass());
-        mapCaches.add(key);
+//        mapCaches.add(key);
         return mapperAgent.map(var1, var2);
     }
 
@@ -77,7 +80,7 @@ public class MapperUtil {
             Class tClazz = ((Field) targetNames.get(fieldName)).getType();
             if (Objects.equals(tClazz, clazz))
                 mapperAgent.register(clazz, tClazz);
-            //mapperRegister(clazz, tClazz);
+            mapperRegister(clazz, tClazz);
         }
         mapperAgent.register(sourceClazz, targetClazz, (String[]) excludes.toArray(new String[excludes.size()]));
     }

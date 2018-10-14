@@ -1,4 +1,4 @@
-package com.example.medicine.model.expands;
+package com.example.medicine.common.utils;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
