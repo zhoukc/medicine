@@ -2,6 +2,7 @@ package com.example.medicine.rest;
 
 import com.example.medicine.exception.BusinessException;
 import com.example.medicine.ibiz.IUserService;
+import com.example.medicine.model.expands.ApiDescription;
 import com.example.medicine.model.po.User;
 import com.example.medicine.model.ro.AddUserInput;
 import com.example.medicine.model.ro.AddUserOutput;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Slf4j
-@Api(value = "测试Controller")
+@Api(tags = "测试Controller")
 public class TestController {
 
 

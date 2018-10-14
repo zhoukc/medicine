@@ -27,6 +27,7 @@ public class Swagger2Config {
         return new ApiInfoBuilder()
                 .title("xxx项目 api文档")
                 .description("简单优雅的api文档")
+                .termsOfServiceUrl("http://127.0.0.1:8080/")
                 .version("1.0")
                 .build();
     }
